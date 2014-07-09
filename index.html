@@ -4,78 +4,81 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Ecard.ly</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 	<header>
-		<img src="images/logo.png" />
+		<div class="container">
+			<img src="images/logo.png" />
+		</div>
 	</header>
 
-	<section>
-		<article>
-			<h2>Ecard of the Day</h2>
-			<img src="images/ecard-nycstartups.jpg" alt="#NYCStartups"/>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, nemo ea asperiores laborum. Quod repellendus sint ipsam, provident rem voluptas pariatur saepe consequatur excepturi. Similique odit at iure quasi, maxime quod harum assumenda, nemo velit nostrum! Rerum natus omnis iure. Ut explicabo quam earum et beatae dolorum, voluptatum, voluptates iure.</p>
-			<a href="#">DOWNLOAD</a>
 
-			<span>Posted by <a href="#">Steve Smith</a> on August 2, 2012 / Comments (<a href="#">3</a>)</span>
-		</article>
+	<div class="container clearfix">
+		<section class="col">
+			<article>
+				<h2>Ecard of the Day</h2>
+				<img src="images/ecard-nycstartups.jpg" alt="#NYCStartups"/>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, nemo ea asperiores laborum. Quod repellendus sint ipsam, provident rem voluptas pariatur saepe consequatur excepturi. Similique odit at iure quasi, maxime quod harum assumenda, nemo velit nostrum! Rerum natus omnis iure. Ut explicabo quam earum et beatae dolorum, voluptatum, voluptates iure.
+				<a href="#">DOWNLOAD</a></p>
+		
+				<span>Posted by <a href="#">Steve Smith</a> on August 2, 2012 / Comments (<a href="#">3</a>)</span>
+			</article>
+		
+			<article>
+				<h2>Doing The Big Work</h2>
+				<img src="images/ecard-courage.jpg" alt="#Courage"/>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, nemo ea asperiores laborum. Quod repellendus sint ipsam, provident rem voluptas pariatur saepe consequatur excepturi. Similique odit at iure quasi, maxime quod harum assumenda, nemo velit nostrum! Rerum natus omnis iure. Ut explicabo quam earum et beatae dolorum, voluptatum, voluptates iure.
+				<a href="#">DOWNLOAD</a></p>
 
-		<article>
-			<h2>Doing The Big Work</h2>
-			<img src="images/ecard-courage.jpg" alt="#Courage"/>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, nemo ea asperiores laborum. Quod repellendus sint ipsam, provident rem voluptas pariatur saepe consequatur excepturi. Similique odit at iure quasi, maxime quod harum assumenda, nemo velit nostrum! Rerum natus omnis iure. Ut explicabo quam earum et beatae dolorum, voluptatum, voluptates iure.</p>
-			<a href="#">DOWNLOAD</a>
-
-			<span>Posted by <a href="#">Steve Smith</a> on August 2, 2012 / Comments (<a href="#">3</a>)</span>
-
-		</article>
-	</section>
-
-
-
-	<div class="sidebar">
-		<nav>
-			<div class="nav-archive">
-				<h3>Archive</h3>
-				<a href="#">January</a>
-				<a href="#">February</a>
-				<a href="#">March</a>
-				<a href="#">April</a>
-				<a href="#">May</a>
-				<a href="#">June</a>
-				<a href="#">July</a>
-				<a href="#">August</a>
-				<a href="#">September</a>
-				<a href="#">October</a>
-				<a href="#">November</a>
-				<a href="#">December</a>
-			</div>
-
-			<div class="nav-blog">
-				<h3>Blogroll</h3>
-				<a href="#">MailChimp</a>
-				<a href="#">Shopify</a>
-				<a href="#">The Next Web</a>
-				<a href="#">Mint.com</a>
-				<a href="#">Mashable</a>
-			</div>
-
-			<a href="#"><img src="images/ad-cut-and-paste.gif" alt="Cut and Paste" /></a>
-			<a href="#"><img src="images/ad-postcard-tee.png" alt="Postcard Tees" /></a>
-			<a href="#"><img src="images/ad-submit-your-own.png" alt="Submit Your Own" /></a>
-
-		</nav>
+		
+				<span>Posted by <a href="#">Steve Smith</a> on August 2, 2012 / Comments (<a href="#">3</a>)</span>
+		
+			</article>
+		</section>
+		
+		
+		
+		<div class="sidebar col">
+			<nav>
+				<div class="nav-archive">
+					<h3>Archive</h3>
+					<a href="#">January</a>
+					<a href="#">February</a>
+					<a href="#">March</a>
+					<a href="#">April</a>
+					<a href="#">May</a>
+					<a href="#">June</a>
+					<a href="#">July</a>
+				</div>
+		
+				<div class="nav-blog">
+					<h3>Blogroll</h3>
+					<a href="#">MailChimp</a>
+					<a href="#">Shopify</a>
+					<a href="#">The Next Web</a>
+					<a href="#">Mint.com</a>
+					<a href="#">Mashable</a>
+				</div>
+		
+				<a href="#"><img src="images/ad-cut-and-paste.gif" alt="Cut and Paste" /></a>
+				<a href="#"><img src="images/ad-postcard-tee.png" alt="Postcard Tees" /></a>
+				<a href="#"><img src="images/ad-submit-your-own.png" alt="Submit Your Own" /></a>
+		
+			</nav>
+		</div>
+		
 	</div>
-
-
-
-	<footer class="social">
-		<a href="#"><img src="images/social-icon-twitter.png" alt="twitter"/></a>
-		<a href="#"><img src="images/social-icon-facebook.png" alt="facebook" /></a>
-		<a href="#"><img src="images/social-icon-pinterest.png" alt="pinterest" /></a>
-	</footer>
+		
+	<div class="container clearfix">
+		<footer class="social">
+			<a href="#"><img src="images/social-icon-twitter.png" alt="twitter"/></a>
+			<a href="#"><img src="images/social-icon-facebook.png" alt="facebook" /></a>
+			<a href="#"><img src="images/social-icon-pinterest.png" alt="pinterest" /></a>
+		</footer>
+	</div>
 
 </body>
 </html>

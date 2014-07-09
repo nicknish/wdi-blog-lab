@@ -1,0 +1,95 @@
+/* Global 
+==================== */
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html { font-size: 100%; }
+body {
+	background-color: #D6D6D6;
+	font-family: sans-serif;
+}
+.container {
+	margin: 0 auto;
+	width: 70%;
+}
+a { text-decoration: none; }
+
+/* Header 
+=========== */
+header {
+	background: url('../images/background.jpg') repeat-x;
+	text-align: center;
+}
+
+header img { width: 200px; margin: 1.5rem;}
+
+
+/* Main Content 
+=========== */
+section {
+	background-color: white;
+	padding: 1.5rem;
+	width: 70%;	
+}
+section h2 {
+	font-size: 1.25rem;
+	font-weight: 800;
+}
+article { padding-bottom: 3rem; }
+article p { 
+	font-size: .8rem;
+	line-height: 1.25;
+}
+article span { 
+	display: block; 
+	padding: .6rem;
+	font-size: .7rem; 
+	border-top: 1px dotted black;
+	border-bottom: 2px solid black;
+}
+article a { color: red; font-weight: bold;}
+
+/* Sidebar 
+=========== */
+.sidebar { 
+	padding: 1.5rem;
+	background-color: white;
+	width: 30%;
+	padding-left: 1rem;
+	font-size: .75rem;
+}
+.nav-archive a, .nav-blog a {
+	font-weight: bold;
+	padding-top: .3rem;
+	color: black;
+	display: block;
+}
+.sidebar h3 { 
+	text-transform:uppercase; 
+	margin: 0;
+	padding-top: .3rem;
+}
+.nav-archive, .nav-blog { margin-bottom: 1rem; }
+nav img { margin: 0 auto; }
+
+
+/* Columns 
+============ */
+.col { float:left; padding-left: 1rem; }
+
+
+/* Social 
+============ */
+.social { text-align: center; padding: 1rem 0;}
+
+
+/* Clearfix 
+============ */
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix { clear:both; }
