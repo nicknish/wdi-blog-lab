@@ -1,0 +1,13 @@
+body {
+	background-color: #D6D6D6;
+}
+
+header {
+	background: url('images/background.jpg');
+}
+
+section {
+	background-color: white;
+}
+
+.sidebar { background-color: white;}
