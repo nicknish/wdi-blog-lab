@@ -49,6 +49,23 @@ article p {
 	line-height: 1.4;
 }
 
+.download { 
+	display: inline-block; 
+	font-size: .9rem; 
+	padding: .3rem;
+	margin-bottom: .5rem;
+	border: 1px solid red;
+	border-radius: 5px;
+	-webkit-transition: background-color.5s ease-in-out, color.5s ease-in-out;
+	-o-transition: background-color .5s ease-in-out, color.5s ease-in-out;
+	transition: background-color .5s ease-in-out, color.5s ease-in-out;
+}
+
+.download:hover {
+	background-color: red;
+	color: white;
+}
+
 article span { 
 	display: block; 
 	padding: .6rem;
@@ -62,8 +79,8 @@ article a { color: red; font-weight: bold;}
 
 /* Sidebar 
 =========== */
-.sidebar { 
-	padding: 2rem 2rem 2rem 1rem;
+nav { 
+	padding: 0rem 2rem 2rem 1rem;
 	background-color: white;
 	font-size: .7rem;
 }
@@ -72,7 +89,6 @@ article a { color: red; font-weight: bold;}
 	font-weight: bold;
 	padding-top: .3rem;
 	color: black;
-	display: block;
 }
 
 .sidebar h3 { 
@@ -84,10 +100,11 @@ article a { color: red; font-weight: bold;}
 
 .nav-archive, .nav-blog { margin-bottom: 1rem; }
 
-nav img { padding-bottom: .7rem; width: 100%; }
+.ads { text-align: center; }
+.ads img { padding-bottom: .7rem; width: 32%; }
 
 
-/* Social 
+/* Social Icons
 ============ */
 .social { 
 	text-align: center; 
@@ -95,29 +112,48 @@ nav img { padding-bottom: .7rem; width: 100%; }
 	clear: both;
 }
 
-
 /* Clearfix 
 ============ */
 .clearfix:before, .clearfix:after {
 	content: " ";
 	display: table;
-}
-.clearfix:after { clear:both; }
+} .clearfix:after { clear:both; }
 
+
+/* ========================================= */
 
 
 /* Media Queries 
 ================  */
 @media (min-width: 48rem) {
-	html { font-size: 112%; }
 	.container { width: 70%; }
 	.col { float: left; padding: 0 1rem 0;}
 	.two-thirds { width: 66.67%; }
 	.third { width: 33.3%; }
-	.sidebar { 
+	nav { 
 		padding: 1.5rem; 
 		font-size: .6rem;
+		padding: 2rem 2rem 2rem 1rem;
 	}
+	.nav-archive a, .nav-blog a {
+		display: block;
+	}
+	article p { display: inline; font-size: 0.7rem;}
+	article span { margin-top: 1rem; }
+	.download { 
+		display: inline; 
+		text-transform: uppercase;
+		font-size: .75rem; 
+		padding: 0;
+		margin-bottom: 0;
+		border: 0;
+		border-radius: 0;
+		-webkit-transition: none;
+		-o-transition: none;
+		transition: none;
+	}
+	.download:hover { background-color: inherit; color: inherit;}
+	.ads img { width: 100%; }
 
 
 
